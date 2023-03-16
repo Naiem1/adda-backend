@@ -50,6 +50,18 @@
       "relation": "oneToMany",
       "target": "api::comment.comment",
       "mappedBy": "post"
+    },
+    "reaction": {
+      "type": "enumeration",
+      "enum": [
+        "LIKE",
+        "LOVE"
+      ]
+    },
+    "reacts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reaction.reaction"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "comment",
     "pluralName": "comments",
-    "displayName": "Comment"
+    "displayName": "Comment",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,6 +26,18 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "comments"
+    },
+    "reaction": {
+      "type": "enumeration",
+      "enum": [
+        "LIKE",
+        "LOVE"
+      ]
+    },
+    "react": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::reaction.reaction"
     }
   }
 }
