@@ -7,7 +7,10 @@
 const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController("api::post.post", (strapi) => ({
-    build: (ctx, next) => {
-        console.log(ctx.request);;
-    }
+    async create (ctx) {
+      const {title, content} = ctx.request.body;
+      
+        
+        console.log('OUTPUT>>', ctx);
+      },
 }));
