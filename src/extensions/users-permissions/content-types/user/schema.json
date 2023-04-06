@@ -68,12 +68,6 @@
       "relation": "oneToOne",
       "target": "api::user-profile.user-profile"
     },
-    "posts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::post.post",
-      "mappedBy": "User"
-    },
     "comments": {
       "type": "relation",
       "relation": "oneToMany",
@@ -84,6 +78,18 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::reaction.reaction",
+      "mappedBy": "user"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "user"
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post",
       "mappedBy": "user"
     }
   }

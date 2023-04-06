@@ -1,13 +1,13 @@
 "use strict";
 
 /**
- * post controller
+ * article controller
  */
 
 const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController("api::post.post",(strapi) => ({
-  async createPost(ctx) {
+module.exports = createCoreController("api::article.article", (strapi) => ({
+  async createArticle(ctx) {
     try {
       // const { username, password, email } = ctx.state.user;
       const user = ctx.state.user;

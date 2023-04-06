@@ -39,7 +39,7 @@
       "targetField": "title",
       "required": true
     },
-    "User": {
+    "user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
