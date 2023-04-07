@@ -15,12 +15,6 @@
     "content": {
       "type": "richtext"
     },
-    "post": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::post.post",
-      "inversedBy": "comments"
-    },
     "user": {
       "type": "relation",
       "relation": "manyToOne",
@@ -38,6 +32,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::reaction.reaction"
+    },
+    "post": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::post.post",
+      "inversedBy": "comments"
     }
   }
 }

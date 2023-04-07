@@ -2,12 +2,13 @@ module.exports = {
     routes: [
       {
         method: "POST",
-        path: "/post/commentCreate",
-        handler: "comment.createComment",
+        path: "/post/:id/comment",
+        handler: "comment.comment",
         config: {
           policies: [],
           middlewares: [],
         },
       },
+    
     ],
   };

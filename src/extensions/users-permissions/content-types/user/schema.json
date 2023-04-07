@@ -80,12 +80,6 @@
       "target": "api::reaction.reaction",
       "mappedBy": "user"
     },
-    "articles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article.article",
-      "mappedBy": "user"
-    },
     "posts": {
       "type": "relation",
       "relation": "oneToMany",
