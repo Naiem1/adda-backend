@@ -15,7 +15,8 @@
     "title": {
       "type": "string",
       "minLength": 4,
-      "maxLength": 180
+      "maxLength": 180,
+      "required": true
     },
     "content": {
       "type": "richtext",
