@@ -20,7 +20,7 @@ module.exports = createCoreController('api::comment.comment', (strapi) => ({
   
       //   console.log({ ...ctx.request.body });
       console.log('user>>', ctx.request.body.data.user);
-      console.log('article>>', ctx.request.body.data.article);
+      console.log('post>>', ctx.request.body.data.post);
         const response = await super.create(ctx);
         console.log(response)
       //   const entry = await strapi.entityService.create(

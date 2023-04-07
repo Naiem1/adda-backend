@@ -28,10 +28,11 @@
         "LOVE"
       ]
     },
-    "react": {
+    "reacts": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::reaction.reaction"
+      "relation": "oneToMany",
+      "target": "api::reaction.reaction",
+      "mappedBy": "comment"
     },
     "post": {
       "type": "relation",

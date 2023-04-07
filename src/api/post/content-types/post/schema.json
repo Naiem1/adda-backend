@@ -59,10 +59,11 @@
         "LOVE"
       ]
     },
-    "reacts": {
+    "reactions": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::reaction.reaction"
+      "target": "api::reaction.reaction",
+      "mappedBy": "post"
     }
   }
 }
