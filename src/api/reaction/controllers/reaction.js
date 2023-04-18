@@ -11,6 +11,7 @@ module.exports = createCoreController("api::reaction.reaction", (strapi) => ({
     try {
       const user = ctx.state.user;
       ctx.request.body.data.user = user.id;
+      ctx.request.body.data.username = user.username;
       ctx.request.body.data.post = ctx.params.id;
 
       console.log("user>>", ctx.request.body.data.user);
