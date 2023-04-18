@@ -59,9 +59,9 @@
         "LOVE"
       ]
     },
-    "reactions": {
+    "react": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::reaction.reaction",
       "mappedBy": "post"
     }
