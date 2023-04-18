@@ -10,8 +10,17 @@ module.exports = {
         },
       },
       {
-        method: "POST",
-        path: "/post/:id/commentCreator",
+        method: "GET",
+        path: "/findData",
+        handler: "post.findData",
+        config: {
+          policies: [],
+          middlewares: [],
+        },
+      },
+      {
+        method: "GET",
+        path: "/post/:id/findcomments",
         handler: "post.comment",
         config: {
           policies: [],
