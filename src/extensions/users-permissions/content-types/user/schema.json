@@ -74,16 +74,16 @@
       "target": "api::comment.comment",
       "mappedBy": "user"
     },
-    "posts": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::post.post",
-      "mappedBy": "user"
-    },
     "reaction": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::reaction.reaction",
+      "mappedBy": "user"
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post",
       "mappedBy": "user"
     }
   }

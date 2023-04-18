@@ -9,6 +9,15 @@ module.exports = {
           middlewares: [],
         },
       },
+      {
+        method: "GET",
+        path: "/post/:id/comment",
+        handler: "comment.findComment",
+        config: {
+          policies: [],
+          middlewares: [],
+        },
+      },
     
     ],
   };
